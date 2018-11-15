@@ -7,13 +7,9 @@ import sqlite3
 import datetime
 import base64
 
-
-
 #Настройки / Settings
-appdir = '/home/ep4sh/appdata/PCS14/'
+appdir = '/home/ep4sh/appdata/'
 outdir = appdir
-
-
 
 # создаем имя базы (S<текущая_дата>)
 db_string = "S"+"15.11.2018"
@@ -48,3 +44,4 @@ for db in os.listdir(appdir):
         finally:
             cc.close()
             conn.close()
+    
